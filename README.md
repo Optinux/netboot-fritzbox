@@ -1,6 +1,6 @@
 # netboot-fritzbox
 
-A monolithic Docker container designed to run your own [netboot.xyz](https://github.com/netbootxyz/netbootxyz) instance alongside an existing external DHCP server, such as the one built into the FRITZ!Box.
+A monolithic Docker container designed to run your own [netboot.xyz](https://github.com/netbootxyz/docker-netbootxyz) instance alongside an existing external DHCP server, such as the one built into the FRITZ!Box.
 
 ## Huh?
 
