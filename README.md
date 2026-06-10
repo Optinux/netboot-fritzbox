@@ -32,5 +32,4 @@ If needed, hosted TFTP/web assets can be accessed directly via NGINX at `http://
 
 No more setup should be necessary! Except if you want to netboot Windows, this requires more [configuration](https://netboot.xyz/docs/kb/pxe/windows/). 
 
-Since there are technically now two *competing* DHCP-Servers running in your network, loading netboot might take up to 10s. Also, the client sometimes fails to recieve its DHCP-Lease, thus netboot will prompt you to manually enter a static IP. I still having really figured out why this happens, nothing ive tried really fixes it. Open up a PR if you have any ideas!
-
+Since there are technically now two *competing* DHCP-Servers running in your network, loading netboot might take up to 10s. Also, the client sometimes fails to recieve its DHCP-Lease, thus netboot will prompt you to manually enter a static IP. I still havent really figured out why this happens, nothing ive tried fully fixed it. Open up a PR if you have any ideas! Still, netboot loads and is fully usable!
