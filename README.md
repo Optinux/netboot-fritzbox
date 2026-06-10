@@ -28,4 +28,9 @@ Usually, the DHCP server provides the required PXE boot options. Since this can'
 ## Usage
 
 Head over to `http://<your-server-ip>:8901` and fetch the latest netboot menus. Here you can also edited the menu entries and locally store images.
-The hosted TFTP/web assets can be accessed directly via NGINX at `http://<your-server-ip>:8902`.
+If needed, hosted TFTP/web assets can be accessed directly via NGINX at `http://<your-server-ip>:8902`.
+
+No more setup should be necessary! Except if you want to netboot Windows, this requires more [configuration](https://netboot.xyz/docs/kb/pxe/windows/). 
+
+Since there are technically now two *competing* DHCP-Servers running in your network, loading netboot might take up to 10s. Also, the client sometimes fails to recieve its DHCP-Lease, thus netboot will prompt you to manually enter a static IP. I still having really figured out why this happens, nothing ive tried really fixes it. Open up a PR if you have any ideas!
+
